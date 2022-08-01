@@ -10,20 +10,20 @@ public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
         int amount = 1_000;
         int actual = service.remain(amount);
-        assertEquals(actual,0);
+        assertEquals(0,actual);
     }
     @org.junit.Test
     public void shouldOfferToPay200IfAmountIs1800() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1800;
         int actual = service.remain(amount);
-        assertEquals(actual,200);
+        assertEquals(200,actual);
     }
     @org.junit.Test
     public void shouldOfferToPay700IfAmountIs300() {
         CashbackHackService service = new CashbackHackService();
         int amount = 300;
         int actual = service.remain(amount);
-        assertEquals(actual,700);
+        assertEquals(700,actual);
     }
 }
